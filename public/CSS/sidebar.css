@@ -431,7 +431,7 @@ body{
 .content main .bottom-data>div{
     border-radius: 20px;
     background: var(--light);
-    padding: 24px;
+    padding: 24px 24px 50px 24px;
     overflow-x: auto;
 }
 

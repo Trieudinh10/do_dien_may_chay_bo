@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <script src="/js/chart.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/diennang.css">
 </head>
 <body>
     <%- include ('./partials/sidebar') %>
@@ -52,49 +57,15 @@
             <div class="orders">
                 <div class="header">
                     <i class='bx bx-receipt'></i>
-                    <h3>Recent Orders</h3>
+                    <h3>Biểu đồ dòng điện</h3>
                     <i class='bx bx-filter'></i>
-                    <i class='bx bx-search'></i>
+                    <!-- <i class='bx bx-search'></i> -->
                 </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>User</th>
-                            <th>Order Date</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <img src="images/profile-1.jpg">
-                                <p>John Doe</p>
-                            </td>
-                            <td>14-08-2023</td>
-                            <td><span class="status completed">Completed</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="images/profile-1.jpg">
-                                <p>John Doe</p>
-                            </td>
-                            <td>14-08-2023</td>
-                            <td><span class="status pending">Pending</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="images/profile-1.jpg">
-                                <p>John Doe</p>
-                            </td>
-                            <td>14-08-2023</td>
-                            <td><span class="status process">Processing</span></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div id="chartContainer" style="position: relative; height: 370px; width: 100%;"></div>
             </div>
 
             <!-- Reminders -->
-            <div class="reminders">
+            <!-- <div class="reminders">
                 <div class="header">
                     <i class='bx bx-note'></i>
                     <h3>Remiders</h3>
@@ -124,7 +95,7 @@
                         <i class='bx bx-dots-vertical-rounded'></i>
                     </li>
                 </ul>
-            </div>
+            </div> -->
 
             <!-- End of Reminders-->
 

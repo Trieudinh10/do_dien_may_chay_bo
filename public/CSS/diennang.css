@@ -1,0 +1,28 @@
+:root {
+    --light: #f6f6f9;
+    --primary: #1976D2;
+    --light-primary: #CFE8FF;
+    --grey: #eee;
+    --dark-grey: #AAAAAA;
+    --dark: #363949;
+    --danger: #D32F2F;
+	--light-danger: #FECDD3;
+    --warning: #FBC02D;
+    --light-warning: #FFF2C6;
+    --success: #388E3C;
+    --light-success: #BBF7D0;
+}
+
+.canvasjs-chart-credit{
+    display: none;
+}
+
+.canvasjs-chart-canvas{
+    /* background-color: var(--light); */
+    border-radius: 20px;
+    width: 100%;
+}
+
+.canvasjs-chart-toolbar button{
+    border-radius: 20px;
+}
