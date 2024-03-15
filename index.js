@@ -3,6 +3,7 @@ const dotenv = require('dotenv');
 const path = require('path');
 
 const indexRoutes = require('./routes/indexRoutes');
+const authRoutes = require('./routes/authRoutes');
 
 //.ENV
 dotenv.config();
@@ -25,3 +26,4 @@ server.listen(PORT, () => {
 
 
 app.use(indexRoutes);
+app.use(authRoutes);

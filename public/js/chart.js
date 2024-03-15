@@ -61,7 +61,7 @@ window.onload = function () {
     });
     
     var xVal = 0;
-    var yVal = 100;
+    var yVal = 20;
     var updateInterval = 1000;
     var dataLength = 50; // number of dataPoints visible at any point
     
@@ -69,7 +69,7 @@ window.onload = function () {
         count = count || 1;
         // count is number of times loop runs to generate random dataPoints.
         for (var j = 0; j < count; j++) {	
-            yVal = yVal + Math.round(5 + Math.random() *(-5-5));
+            yVal = yVal + Math.round(1 + Math.random() *(-1-1));
             dps.push({
                 x: xVal,
                 y: yVal
