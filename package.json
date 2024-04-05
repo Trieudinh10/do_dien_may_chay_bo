@@ -23,6 +23,7 @@
     "modbus-serial": "^8.0.16",
     "mysql2": "^3.9.2",
     "path": "^0.12.7",
+    "socket.io": "^4.7.5",
     "validator": "^13.11.0"
   }
 }

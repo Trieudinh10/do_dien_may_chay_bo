@@ -31,7 +31,7 @@ app.use(authRoutes);
 
 const ModbusRTU = require('modbus-serial');
 const client = new ModbusRTU();
-const serialPort = 'COM3'; // Cổng COM RS485
+const serialPort = 'COM5'; // Cổng COM RS485
 const options = {
   baudRate: 9600, // Tốc độ truyền dữ liệu
   dataBits: 8,    // Số bit dữ liệu
@@ -42,7 +42,7 @@ const options = {
 // Kết nối với thiết bị Modbus qua cổng COM
 client.connectRTU(serialPort, options, connected);
 var dataArr = []; // Mảng chung để lưu trữ giá trị
-// var dataArr1 = []; // Mảng chung để lưu trữ giá trị
+var dataArr1 = []; // Mảng chung để lưu trữ giá trị
 
 async function connected() {
     console.log('Đã kết nối với thiết bị Modbus qua cổng COM');
@@ -56,13 +56,14 @@ async function connected() {
         try {
             const data = await readdata(startAddress, quantity);
             dataArr[i] = data;
-            // dataArr1[0] = dataArr[1] + dataArr[2];
+            dataArr1[0] = dataArr[1] + dataArr[2];
         } catch (err) {
             console.error('Lỗi khi đọc dữ liệu Modbus là:', err);
         }
     }
     console.log('Dữ liệu Modbus:', dataArr);
-    // console.log('Dữ liệu Modbus1:', dataArr1);
+    console.log('Dữ liệu Modbus1:', dataArr1);
+    console.log('Dữ liệu Modbus1 từng biến:', dataArr[0],dataArr[1],dataArr[2],dataArr[3] );
 }
 
 setInterval(() => {

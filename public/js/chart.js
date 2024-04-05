@@ -60,7 +60,7 @@ window.onload = function () {
         }]
     });
     
-    var xVal = 0;
+    var xVal = dataArr[0];
     var yVal = 20;
     var updateInterval = 1000;
     var dataLength = 50; // number of dataPoints visible at any point
