@@ -395,8 +395,8 @@ body{
 }
 
 .content main .insights li:nth-child(2) .bx{
-    background: var(--light-warning);
-    color: var(--warning);
+    background: var(--light-primary);
+    color: var(--primary);
 }
 
 .content main .insights li:nth-child(3) .bx{
@@ -405,7 +405,7 @@ body{
 }
 
 .content main .insights li:nth-child(4) .bx{
-    background: var(--light-success);
+    background: var(--light-danger);
     color: var(--danger);
 }
 
@@ -506,6 +506,9 @@ body{
 
 .content main .bottom-data .orders table tr td .status.completed{
     background: var(--success);
+}
+.content main .bottom-data .orders table tr td .status.notcompleted{
+    background: var(--danger);
 }
 
 .content main .bottom-data .orders table tr td .status.process{
