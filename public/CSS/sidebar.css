@@ -310,7 +310,7 @@ body{
 
 .content main{
     width: 100%;
-    padding: 36px 24px;
+    padding: 0px 24px;
     max-height: calc(100vh - 56px);
 }
 
@@ -628,4 +628,10 @@ body{
         min-width: 340px;
     }
 
+}
+
+
+.logo_id {
+    width: 50px;
+    margin: 0 5px;
 }
